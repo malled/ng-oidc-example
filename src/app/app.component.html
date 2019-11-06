@@ -1,0 +1,8 @@
+<div style="text-align:center">
+  <button (click)="loginPopup()">Login</button>
+  <button (click)="logoutPopup()">logoutPopup</button>
+  <button (click)="signoutRedirect()">Signout</button>
+</div>
+
+<button (click)="checkUserInfo()">Check userInfo</button>
+<pre>{{identity$ | async | json}}</pre>
